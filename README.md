@@ -4,6 +4,10 @@
 Analyzes two datasets-company purchases and  political party transactions. 
 Identified top parties and companies based on total denomination and the month;y denomination over years and visualizes these insights through tables and plots.
 
+### Data Sources:
+Company Data : contains the companies data that purchase the electoral bonds,named as "Company.csv"
+Political Parties Data : contains the political parties transactions data of the electoral bonds,named as "Party.csv"
+
 ```python
 import pandas as pd
 import numpy as np
