@@ -1,7 +1,7 @@
 # Electoral_Bond_2024-Analysis
 
 ### Project Overview :
-Analysed two datasets-company purchases and  political party transactions. 
+Analysed two datasets-company purchases and  political party transactions using python 
 Identified top parties and companies based on total denomination and the monthly denomination over years and visualizes these insights through tables and plots.
 
 ### Data Sources:
