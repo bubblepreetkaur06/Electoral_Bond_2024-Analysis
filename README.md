@@ -2,7 +2,7 @@
 
 ### Project Overview :
 Analyzes two datasets-company purchases and  political party transactions. 
-Identified top parties and companies based on total denomination and the month;y denomination over years and visualizes these insights through tables and plots.
+Identified top parties and companies based on total denomination and the monthly denomination over years and visualizes these insights through tables and plots.
 
 ### Data Sources:
 Company Data : contains the companies data that purchase the electoral bonds,named as "Company.csv"
