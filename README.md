@@ -6,6 +6,7 @@ Identified top parties and companies based on total denomination and the month;y
 
 ### Data Sources:
 Company Data : contains the companies data that purchase the electoral bonds,named as "Company.csv"
+
 Political Parties Data : contains the political parties transactions data of the electoral bonds,named as "Party.csv"
 
 ```python
