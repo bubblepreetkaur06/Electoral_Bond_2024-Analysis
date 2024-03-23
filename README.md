@@ -104,11 +104,19 @@ plt.tight_layout()
 plt.show()
 ```
 
+
+![top5_politicalparty](https://github.com/bubblepreetkaur06/Electoral_Bond_2024-Analysis/assets/164672202/5f2f091f-803e-4250-88fb-c1375fdf2b3d)
+
+
+
 ```python
 #calculates the total denomination for that company for that year
 company_counts = company.groupby(['Year', 'Purchaser Name'])['Denomination(Crore)'].sum().reset_index(name='Total Denomination')
 print(company_counts)
 ```
+
+
+
 ```python
 company_top5_per_year = company_counts.groupby('Year').apply(lambda x: x.nlargest(5, 'Total Denomination')).reset_index(drop=True)
 # Display in tabular form
@@ -116,6 +124,10 @@ for year, group in company_top5_per_year.groupby('Year'):
     print(f"\n{int(year)}:")
     print(tabulate(group.drop(columns='Year'), headers='keys', tablefmt='grid', showindex=False))
 ```
+
+
+
+
 ```python
 #top 5 companies with highest total denomination per year
 num_years = len(company_top5_per_year['Year'].unique())
@@ -133,6 +145,11 @@ for i, (year, group) in enumerate(company_top5_per_year.groupby('Year')):
 
 plt.show()
 ```
+
+![top5_company](https://github.com/bubblepreetkaur06/Electoral_Bond_2024-Analysis/assets/164672202/40382218-5257-4e88-a082-8fd2bf757991)
+
+
+
 ```python
 #calculates each month total denomination in each year the company data set
 company['Date of Purchase'] = pd.to_datetime(company['Date of Purchase'])
@@ -154,6 +171,11 @@ monthly_denomination_pivot = monthly_denomination_pivot.loc[(monthly_denominatio
 print("\t\tCompanies Monthly per year \n")
 print(tabulate(monthly_denomination_pivot, headers='keys', tablefmt='pretty'))
 ```
+
+
+
+
+
 ```python
 
 num_years = len(company_monthly_denomination['Year'].unique())
@@ -185,5 +207,7 @@ plt.grid(axis='y',linestyle='--', alpha=0.5)
 plt.tight_layout()
 plt.show()
 ```
+
+![monthly_demo_yearly](https://github.com/bubblepreetkaur06/Electoral_Bond_2024-Analysis/assets/164672202/cd9105a9-8d88-429e-8568-54237be513d9)
 
 
