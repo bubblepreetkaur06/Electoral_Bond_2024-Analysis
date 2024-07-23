@@ -1,4 +1,4 @@
-# Electoral_Bond_2024-Analysis
+# Analysing Electoral Bond Daataset provided by SBI for Year 2024
 
 ### Project Overview :
 Analysed two datasets-company purchases and  political party transactions using Python.
